@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Manrope:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="Calculadora">
+        <div class="tela">
+            <div class="tela-anterior" id="telaAnterior"></div>
+            <div class="tela-atual" id="telaAtual"></div>
+        </div>
+    </div>
+
+    <div class="teclado">
+        <button class="tecla funcao" data-acao="limpar">AC</button>
+        <button class="tecla funcao" data-acao="apagar" ⌫>⌫</button>
+        <button class="tecla funcao" data-acao="porcentagem" %>%</button>
+        <button class="tecla operador" data-operador="÷">÷</button>
+
+        <button class="tecla numero" data-numero="7">7</button>
+        <button class="tecla numero" data-numero="8">8</button>
+        <button class="tecla numero" data-numero="9">9</button>
+        <button class="tecla operador" data-operador="x">x</button>
+
+        <button class="tecla numero" data-numero="4">4</button>
+        <button class="teclas numero" data-numero="5">4</button>
+        <button class="tecla numero" data-numero="6">6</button>
+        <button clas="tecla operador" data-operador="-">-</button>
+
+        <button class="tecla numero" data-numero="1">1</button>
+        <button clas="tecla numero" data-numero="2">2</button>
+        <button class="tecla numero" data-numero="3">3</button>
+        <button class="tecla operador" data-operador="+">+</button>
+
+        <button class="tecla numero zero" data-numero="0">0</button>
+        <button clas="tecla numero" data-numero=".">.</button>
+        <button class="tecla igual" data-acao="=">=</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
