@@ -26,7 +26,7 @@
     --sombra-profunda: rgba(0, 0, 0, 0.55);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -74,4 +74,51 @@ padding: 24px;
 
 .tela-atual{
     font-family:" Share Teach Mono" monospace;
+    font-size: 42px;
+    color: var(--tela-texto-glow);
+    text-shadow: 0 0 12px var(--tela-texto-glow);
+    white-space: nowrap;
+    overflow: ellipsis;
+    text-overflow: ellipsis;
+    letter-spacing: 1px;
 }
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px
+}
+
+.tecla{
+    border: none;
+    border-radius: 14px;
+    font-family: "Manrope", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 18px 0;
+    cursor: pointer;
+    color: var(--tecla-num-texto);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+    transition: transform 0.06s ease, box-shadow 0.06 ease, background 0.15s ease;
+}
+
+.tecla:hover{
+    background: var(--tecla-num-hover);
+}
+
+.tecla:active,
+.tecla.pressionada{
+    transform: translateY(4px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.35);
+}
+
+.tecla.funcao{
+    background: var(--tecla-func);
+    color: var(--tecla-func-texto);
+    font-size: 16px;
+}
+
+.tecla.funcao:hover{
+    background: var(--tecla-func-hover);
+}
+
