@@ -121,4 +121,4 @@ document.addEventListener('keydown', (evento) => {
   atualizarTela();
 });
 
-atulizarTela();
+atualizarTela();
